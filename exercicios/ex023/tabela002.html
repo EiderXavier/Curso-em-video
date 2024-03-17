@@ -11,11 +11,17 @@
         table{
             width: 500px;
             border-collapse: collapse;
-
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: grey;
         }
         td.num {
             text-align: right;
@@ -24,6 +30,17 @@
             background-color: grey;
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        tbody tr:nth-child(even){
+            background-color: rgb(211, 211, 211);
+        }
+        tbody tr:nth-child(odd){
+            background-color: lightgreen;
+        }
     </style>
 </head>
 <body>
@@ -31,6 +48,7 @@
     <!--
         ANATOMIA DE TABELAS GRANDES
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -40,10 +58,11 @@
     -->
 
     <table>
+        <CAPtion>População das Unidades Federativas</CAPtion>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -67,17 +86,159 @@
                 <td>Piauí</td>
                 <td class="num">14288023</td>
             </tr>
-
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">16515252</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">14288023</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                
-                    <td class="num"><strong>000000</strong></td>
-                
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>000000</strong></td>
             </tr>
-
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis alias incidunt eveniet natus tempore fuga beatae et modi nulla, magnam amet, reiciendis nobis. Unde beatae dolorum nesciunt enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa quis. Error quaerat, blanditiis saepe unde eaque qui iste reprehenderit officia quis nesciunt, tempora neque repellat impedit, fugiat maiores itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi minima voluptas eos quis, labore expedita quia in explicabo ipsum perferendis assumenda facilis ab ad beatae accusamus id? Distinctio</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis alias incidunt eveniet natus tempore fuga beatae et modi nulla, magnam amet, reiciendis nobis. Unde beatae dolorum nesciunt enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa quis. Error quaerat, blanditiis saepe unde eaque qui iste reprehenderit officia quis nesciunt, tempora neque repellat impedit, fugiat maiores itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi minima voluptas eos quis, labore expedita quia in explicabo ipsum perferendis assumenda facilis ab ad beatae accusamus id? Distinctio</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis alias incidunt eveniet natus tempore fuga beatae et modi nulla, magnam amet, reiciendis nobis. Unde beatae dolorum nesciunt enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa quis. Error quaerat, blanditiis saepe unde eaque qui iste reprehenderit officia quis nesciunt, tempora neque repellat impedit, fugiat maiores itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi minima voluptas eos quis, labore expedita quia in explicabo ipsum perferendis assumenda facilis ab ad beatae accusamus id? Distinctio</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis alias incidunt eveniet natus tempore fuga beatae et modi nulla, magnam amet, reiciendis nobis. Unde beatae dolorum nesciunt enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa quis. Error quaerat, blanditiis saepe unde eaque qui iste reprehenderit officia quis nesciunt, tempora neque repellat impedit, fugiat maiores itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi minima voluptas eos quis, labore expedita quia in explicabo ipsum perferendis assumenda facilis ab ad beatae accusamus id? Distinctio</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis alias incidunt eveniet natus tempore fuga beatae et modi nulla, magnam amet, reiciendis nobis. Unde beatae dolorum nesciunt enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa quis. Error quaerat, blanditiis saepe unde eaque qui iste reprehenderit officia quis nesciunt, tempora neque repellat impedit, fugiat maiores itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi minima voluptas eos quis, labore expedita quia in explicabo ipsum perferendis assumenda facilis ab ad beatae accusamus id? Distinctio</p>
+
 </body>
 </html>
