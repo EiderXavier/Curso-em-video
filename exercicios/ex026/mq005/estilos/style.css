@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* MOBILE FIRST */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body, html{
+    background-color: lightgray;
+}
+
+body header{
+    width: 90%vw;
+    border: 2px 2px 2px solid black;
+    padding: 20px;
+}
+
+body > header > menu > ul > li{
+    text-decoration: none;
+    display: inline;
+}
+
+main h2, p {
+
+padding: 10px;
+
+}
