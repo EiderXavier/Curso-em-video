@@ -21,6 +21,12 @@ Extra large screens, TV – 1201px, and more.
     }
     body{
         background-image: url(../imagens/back-print.jpg);
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: block;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+
     }
     main{
         border: 2px solid black;
@@ -44,8 +50,6 @@ Extra large screens, TV – 1201px, and more.
         img#pc{display: none;}
         img#tv{display:none;}
     }
-
-    
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) { /*DESKTOP*/
     body{
@@ -56,7 +60,6 @@ Extra large screens, TV – 1201px, and more.
         img#pc{display: block;}
         img#tv{display:none;}
     }
-        
 }
 @media screen and (min-width: 1201px) { /*GRANDES TELAS*/
     body{
